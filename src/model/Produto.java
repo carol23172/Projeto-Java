@@ -3,14 +3,14 @@ package model;
 public abstract class Produto {
 
 	
-	private String codigo;
+	private int codigo;
 	private String nome;       //texto
 	private float preco;
 	private int tipo;
 	
 	
 	
-      public Produto(String codigo, String nome, float preco, int tipo) {
+      public Produto(int codigo, String nome, float preco, int tipo) {
 	
 		this.codigo = codigo;
 		this.nome = nome;
@@ -21,16 +21,31 @@ public abstract class Produto {
      
 
 
-	public String getCodigo() {
+	
+
+
+
+
+	public int getCodigo() {
 		return codigo;
 	}
 
 
 
 
-	public void setCodigo(String codigo) {
+
+
+
+
+
+	public void setCodigo(int codigo) {
 		this.codigo = codigo;
 	}
+
+
+
+
+
 
 
 

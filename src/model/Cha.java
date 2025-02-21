@@ -1,22 +1,19 @@
 package model;
 
-public class Cha {
+public class Cha extends Produto {
+
+	public Cha(int codigo, String nome, float preco, int tipo) {
+		super(codigo, nome, preco, tipo);
+	
+	}
+		@Override
+		public void visualizar() {
+			
+			super.visualizar();
+		
+	}
 
 	
-	private String sabor;
-
-	public Cha(String sabor) {
-		super();
-		this.sabor = sabor;
-	}
-
-	public String getSabor() {
-		return sabor;
-	}
-
-	public void setSabor(String sabor) {
-		this.sabor = sabor;
-	}
 	
 	
 	

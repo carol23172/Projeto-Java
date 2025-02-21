@@ -2,22 +2,20 @@ package model;
 
 public class Cafe extends Produto {
 
-	
-	 private String aroma;
-
-	public Cafe(String codigo, String nome, float preco, int tipo, String aroma) {
+	public Cafe(int codigo, String nome, float preco, int tipo) {
 		super(codigo, nome, preco, tipo);
-		this.aroma = aroma;
+		
+	}
+		@Override
+		public void visualizar() {
+			
+			super.visualizar();
+		}
+		
 	}
 
-	public String getAroma() {
-		return aroma;
-	}
-
-	public void setAroma(String aroma) {
-		this.aroma = aroma;
-	} 
-	 
+	
+	
 	 
 	
-}
+
